@@ -6,7 +6,7 @@ L.tileLayer("https://tiles.osm.kr/hot/{z}/{x}/{y}.png", {
     '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a>',
 }).addTo(map);
 
-// 적는 법 {latlng: [위도, 경도], popupContent: '이름'}
+// 적는 법 {latling: [위도, 경도], popupContent: '이름'}
 var markers = [
   {
     latlng: [35.8032306, 127.0999292],
@@ -43,7 +43,7 @@ var markers = [
 ];
 
 markers.forEach(function (markerInfo) {
-  var marker = L.marker(markerInfo.latlng, { icon: customIcon }).addTo(map);
+  var marker = L.marker(markerInfo.latlng).addTo(map);
   marker.bindPopup(markerInfo.popupContent);
 });
 
