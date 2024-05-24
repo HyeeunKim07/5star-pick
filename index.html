@@ -11,9 +11,6 @@
       #map {
         height: 2000px;
       }
-      .popup-content {
-        font-size: 18px;
-      }
     </style>
   </head>
   <body>
@@ -74,9 +71,7 @@
       ];
 
       markers.forEach(function (markerInfo) {
-        var marker = L.marker(markerInfo.latlng, { icon: customIcon }).addTo(
-          map
-        );
+        var marker = L.marker(markerInfo.latlng).addTo(map);
         marker.bindPopup(markerInfo.popupContent);
       });
     </script>
