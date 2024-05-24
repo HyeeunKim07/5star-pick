@@ -6,15 +6,6 @@ L.tileLayer("https://tiles.osm.kr/hot/{z}/{x}/{y}.png", {
     '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a>',
 }).addTo(map);
 
-// 커스텀 아이콘 생성
-var customIcon = L.icon({
-  iconUrl:
-    "https://postfiles.pstatic.net/MjAyNDA1MjRfODMg/MDAxNzE2NTQ2MzA2NjYx.6CGL9pdX-2uAmlUm7OrovnLyHkUMPJ1SfvaSmYgVGd8g.ahzAzMhbbkqUNvSfAAKzVIXF8ZDLZhQ3Fep2pvsXUssg.PNG/free-icon-location-pin-2776067.png?type=w966", // 아이콘 이미지 경로
-  iconSize: [50, 50], // 아이콘 크기
-  iconAnchor: [25, 50], // 앵커 지점
-  popupAnchor: [0, -50], // 팝업 위치 조정
-});
-
 // 적는 법 {latlng: [위도, 경도], popupContent: '이름'}
 var markers = [
   {
